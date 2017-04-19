@@ -649,7 +649,7 @@ var AddSessionComponent = (function () {
         this.eventService.saveSession(session).subscribe(function (data) {
             if (data) {
                 _this.flashMessage.show("Your session has been saved.", { cssClass: 'alert-success', timeout: 3000 });
-                _this.router.navigate(['/dashboard']);
+                _this.router.navigate(['/dashboard/' + _this.eventId]);
                 return true;
             }
             else {
