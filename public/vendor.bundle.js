@@ -14911,21 +14911,6 @@ module.exports = function(it){
 
 /***/ }),
 /* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// most Object methods by ES6 should accept primitives
-var $export = __webpack_require__(0)
-  , core    = __webpack_require__(7)
-  , fails   = __webpack_require__(3);
-module.exports = function(KEY, exec){
-  var fn  = (core.Object || {})[KEY] || Object[KEY]
-    , exp = {};
-  exp[KEY] = exec(fn);
-  $export($export.S + $export.F * fails(function(){ fn(1); }), 'Object', exp);
-};
-
-/***/ }),
-/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21128,6 +21113,21 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.0.1'
 
 //# sourceMappingURL=router.es5.js.map
 
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// most Object methods by ES6 should accept primitives
+var $export = __webpack_require__(0)
+  , core    = __webpack_require__(7)
+  , fails   = __webpack_require__(3);
+module.exports = function(KEY, exec){
+  var fn  = (core.Object || {})[KEY] || Object[KEY]
+    , exp = {};
+  exp[KEY] = exec(fn);
+  $export($export.S + $export.F * fails(function(){ fn(1); }), 'Object', exp);
+};
 
 /***/ }),
 /* 22 */
@@ -70102,7 +70102,7 @@ $export($export.S + $export.F * !__webpack_require__(11), 'Object', {definePrope
 var isObject = __webpack_require__(4)
   , meta     = __webpack_require__(29).onFreeze;
 
-__webpack_require__(20)('freeze', function($freeze){
+__webpack_require__(21)('freeze', function($freeze){
   return function freeze(it){
     return $freeze && isObject(it) ? $freeze(meta(it)) : it;
   };
@@ -70116,7 +70116,7 @@ __webpack_require__(20)('freeze', function($freeze){
 var toIObject                 = __webpack_require__(18)
   , $getOwnPropertyDescriptor = __webpack_require__(30).f;
 
-__webpack_require__(20)('getOwnPropertyDescriptor', function(){
+__webpack_require__(21)('getOwnPropertyDescriptor', function(){
   return function getOwnPropertyDescriptor(it, key){
     return $getOwnPropertyDescriptor(toIObject(it), key);
   };
@@ -70127,7 +70127,7 @@ __webpack_require__(20)('getOwnPropertyDescriptor', function(){
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.7 Object.getOwnPropertyNames(O)
-__webpack_require__(20)('getOwnPropertyNames', function(){
+__webpack_require__(21)('getOwnPropertyNames', function(){
   return __webpack_require__(125).f;
 });
 
@@ -70139,7 +70139,7 @@ __webpack_require__(20)('getOwnPropertyNames', function(){
 var toObject        = __webpack_require__(19)
   , $getPrototypeOf = __webpack_require__(26);
 
-__webpack_require__(20)('getPrototypeOf', function(){
+__webpack_require__(21)('getPrototypeOf', function(){
   return function getPrototypeOf(it){
     return $getPrototypeOf(toObject(it));
   };
@@ -70152,7 +70152,7 @@ __webpack_require__(20)('getPrototypeOf', function(){
 // 19.1.2.11 Object.isExtensible(O)
 var isObject = __webpack_require__(4);
 
-__webpack_require__(20)('isExtensible', function($isExtensible){
+__webpack_require__(21)('isExtensible', function($isExtensible){
   return function isExtensible(it){
     return isObject(it) ? $isExtensible ? $isExtensible(it) : true : false;
   };
@@ -70165,7 +70165,7 @@ __webpack_require__(20)('isExtensible', function($isExtensible){
 // 19.1.2.12 Object.isFrozen(O)
 var isObject = __webpack_require__(4);
 
-__webpack_require__(20)('isFrozen', function($isFrozen){
+__webpack_require__(21)('isFrozen', function($isFrozen){
   return function isFrozen(it){
     return isObject(it) ? $isFrozen ? $isFrozen(it) : false : true;
   };
@@ -70178,7 +70178,7 @@ __webpack_require__(20)('isFrozen', function($isFrozen){
 // 19.1.2.13 Object.isSealed(O)
 var isObject = __webpack_require__(4);
 
-__webpack_require__(20)('isSealed', function($isSealed){
+__webpack_require__(21)('isSealed', function($isSealed){
   return function isSealed(it){
     return isObject(it) ? $isSealed ? $isSealed(it) : false : true;
   };
@@ -70200,7 +70200,7 @@ $export($export.S, 'Object', {is: __webpack_require__(204)});
 var toObject = __webpack_require__(19)
   , $keys    = __webpack_require__(39);
 
-__webpack_require__(20)('keys', function(){
+__webpack_require__(21)('keys', function(){
   return function keys(it){
     return $keys(toObject(it));
   };
@@ -70214,7 +70214,7 @@ __webpack_require__(20)('keys', function(){
 var isObject = __webpack_require__(4)
   , meta     = __webpack_require__(29).onFreeze;
 
-__webpack_require__(20)('preventExtensions', function($preventExtensions){
+__webpack_require__(21)('preventExtensions', function($preventExtensions){
   return function preventExtensions(it){
     return $preventExtensions && isObject(it) ? $preventExtensions(meta(it)) : it;
   };
@@ -70228,7 +70228,7 @@ __webpack_require__(20)('preventExtensions', function($preventExtensions){
 var isObject = __webpack_require__(4)
   , meta     = __webpack_require__(29).onFreeze;
 
-__webpack_require__(20)('seal', function($seal){
+__webpack_require__(21)('seal', function($seal){
   return function seal(it){
     return $seal && isObject(it) ? $seal(meta(it)) : it;
   };
