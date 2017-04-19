@@ -623,11 +623,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var AddSessionComponent = (function () {
-    function AddSessionComponent(eventService, validateService, flashMessage, router) {
+    function AddSessionComponent(eventService, validateService, flashMessage, router, changeDetectorRef) {
         this.eventService = eventService;
         this.validateService = validateService;
         this.flashMessage = flashMessage;
         this.router = router;
+        this.changeDetectorRef = changeDetectorRef;
     }
     AddSessionComponent.prototype.ngOnInit = function () {
     };
@@ -649,7 +650,7 @@ var AddSessionComponent = (function () {
         this.eventService.saveSession(session).subscribe(function (data) {
             if (data) {
                 _this.flashMessage.show("Your session has been saved.", { cssClass: 'alert-success', timeout: 3000 });
-                _this.router.navigate(['/dashboard/' + _this.eventId]);
+                _this.changeDetectorRef.detectChanges();
                 return true;
             }
             else {
@@ -671,10 +672,10 @@ AddSessionComponent = __decorate([
         template: __webpack_require__(352),
         styles: [__webpack_require__(334)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_events_service__["a" /* EventsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_events_service__["a" /* EventsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_validate_service__["a" /* ValidateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_validate_service__["a" /* ValidateService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_events_service__["a" /* EventsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_events_service__["a" /* EventsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_validate_service__["a" /* ValidateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_validate_service__["a" /* ValidateService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"]) === "function" && _e || Object])
 ], AddSessionComponent);
 
-var _a, _b, _c, _d;
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=E:/tutoriale/Angular2 - Getting Started/Angular 2 - Brad Traversy/angular-src/src/add-session.component.js.map
 
 /***/ }),
