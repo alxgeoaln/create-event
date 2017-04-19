@@ -1,0 +1,24 @@
+{
+  "name": "angular2template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "angular2-jwt": "^0.1.28",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*",
+    "underscore": "^1.8.3"
+  },
+  "author": "Georgian Alin Alexandru",
+  "license": "ISC"
+}
