@@ -651,11 +651,9 @@ var AddSessionComponent = (function () {
             if (data) {
                 _this.flashMessage.show("Your session has been saved.", { cssClass: 'alert-success', timeout: 3000 });
                 _this.changeDetectorRef.detectChanges();
-                return true;
             }
             else {
                 _this.flashMessage.show("Something went wrong.", { cssClass: 'alert-danger', timeout: 3000 });
-                return true;
             }
         });
         //endregion
