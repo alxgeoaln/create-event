@@ -1967,7 +1967,11 @@ var EventDetailsComponent = (function () {
     EventDetailsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.addSession = true;
-        this.event = this.route.snapshot.data['event'];
+        this.route.params.forEach(function (params) {
+            console.log(params);
+            _this.event = params['event'];
+        });
+        // this.event = this.route.snapshot.data['event'];
         this.authService.getProfile().subscribe(function (profile) {
             _this.user = profile.user._id;
         }, function (err) {
