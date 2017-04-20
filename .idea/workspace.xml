@@ -4,6 +4,7 @@
     <list default="true" id="299d236f-484b-4a9f-954f-386f23b8f256" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-src" afterPath="$PROJECT_DIR$/angular-src" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-src/src/app/components/events/event-details/event-details.component.ts" afterPath="$PROJECT_DIR$/angular-src/src/app/components/events/event-details/event-details.component.ts" />
     </list>
     <ignored path="Angular 2 - Brad Traversy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,8 +59,8 @@
       <file leaf-file-name="event-details.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/events/event-details/event-details.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+            <state relative-caret-position="280">
+              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
                 <element signature="n#!!block;n#showAll#0;n#EventDetailsComponent#0" expanded="false" />
@@ -586,12 +587,12 @@
       <workItem from="1492346968493" duration="1332000" />
       <workItem from="1492626650357" duration="11894000" />
       <workItem from="1492687218687" duration="5312000" />
-      <workItem from="1492705791307" duration="1300000" />
+      <workItem from="1492705791307" duration="1568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38485000" />
+    <option name="totallyTimeSpent" value="38753000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -958,6 +959,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1060,8 +1064,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/events/event-details/event-details.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        <state relative-caret-position="280">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <element signature="n#!!block;n#showAll#0;n#EventDetailsComponent#0" expanded="false" />

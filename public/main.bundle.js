@@ -1973,7 +1973,9 @@ var EventDetailsComponent = (function () {
     EventDetailsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.params.forEach(function (params) {
-            _this.event = _this.eventService.getEvent(+params['event']);
+            _this.event = _this.eventService.getEvent(console.log(params)
+            // +params['event']
+            );
         });
         this.addSession = true;
         // this.event = this.route.snapshot.data['event'];
