@@ -655,7 +655,7 @@ var AddSessionComponent = (function () {
         this.eventService.saveSession(session).subscribe(function (data) {
             if (data) {
                 _this.flashMessage.show("Your session has been saved.", { cssClass: 'alert-success', timeout: 3000 });
-                _this.changeDetectorRef.detectChanges();
+                location.reload();
             }
             else {
                 _this.flashMessage.show("Something went wrong.", { cssClass: 'alert-danger', timeout: 3000 });
@@ -1007,7 +1007,7 @@ var EventTableComponent = (function () {
         };
         this.eventService.deleteEvent(ids).subscribe(function (data) {
             if (data.success) {
-                _this.router.navigate(['/dashboard']);
+                location.reload();
                 _this.flashMessage.show(data.message, { cssClass: 'alert-success', timeout: 3000 });
             }
             else {
