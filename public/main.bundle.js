@@ -199,7 +199,7 @@ var _a, _b, _c, _d;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auth_service__ = __webpack_require__(27);
@@ -395,37 +395,38 @@ AppComponent = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_login_login_component__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_profile_profile_component__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__routes__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_dasboard_dasboard_component__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_validate_service__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_angular2_flash_messages__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_auth_service__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_events_events_component__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_events_events_list_events_list_component__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_events_events_thumbnail_events_thumbnail_component__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_events_create_event_create_event_component__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_events_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_resolver__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_events_event_details_event_details_component__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_get_event_resolver_service__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_profile_event_table_event_table_component__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_events_event_details_add_session_add_session_component__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_events_event_details_session_list_session_list_component__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_collapsible_well_collapsible_well_component__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_events_attend_attend_component__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__services_attend_service__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_navbar_navbar_component__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_login_login_component__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_register_register_component__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_home_home_component__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__routes__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_dasboard_dasboard_component__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_validate_service__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_angular2_flash_messages__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_angular2_flash_messages__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_auth_service__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_events_events_component__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_events_events_list_events_list_component__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_events_events_thumbnail_events_thumbnail_component__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_events_create_event_create_event_component__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_events_service__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_resolver__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_events_event_details_event_details_component__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_get_event_resolver_service__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_profile_event_table_event_table_component__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_events_event_details_add_session_add_session_component__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_events_event_details_session_list_session_list_component__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_collapsible_well_collapsible_well_component__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_events_attend_attend_component__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__services_attend_service__ = __webpack_require__(103);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -433,6 +434,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -471,33 +473,36 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__components_login_login_component__["a" /* LoginComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__["a" /* RegisterComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__components_profile_profile_component__["a" /* ProfileComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__components_dasboard_dasboard_component__["a" /* DasboardComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__components_events_events_component__["a" /* EventsComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__components_events_events_list_events_list_component__["a" /* EventsListComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__components_events_events_thumbnail_events_thumbnail_component__["a" /* EventsThumbnailComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__components_events_create_event_create_event_component__["a" /* CreateEventComponent */],
-            __WEBPACK_IMPORTED_MODULE_22__components_events_event_details_event_details_component__["a" /* EventDetailsComponent */],
-            __WEBPACK_IMPORTED_MODULE_24__components_profile_event_table_event_table_component__["a" /* EventTableComponent */],
-            __WEBPACK_IMPORTED_MODULE_25__components_events_event_details_add_session_add_session_component__["a" /* AddSessionComponent */],
-            __WEBPACK_IMPORTED_MODULE_26__components_events_event_details_session_list_session_list_component__["a" /* SessionListComponent */],
-            __WEBPACK_IMPORTED_MODULE_27__components_collapsible_well_collapsible_well_component__["a" /* CollapsibleWellComponent */],
-            __WEBPACK_IMPORTED_MODULE_28__components_events_attend_attend_component__["a" /* AttendComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__components_navbar_navbar_component__["a" /* NavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__components_login_login_component__["a" /* LoginComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__components_register_register_component__["a" /* RegisterComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__components_home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__components_dasboard_dasboard_component__["a" /* DasboardComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__components_events_events_component__["a" /* EventsComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__components_events_events_list_events_list_component__["a" /* EventsListComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__components_events_events_thumbnail_events_thumbnail_component__["a" /* EventsThumbnailComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__components_events_create_event_create_event_component__["a" /* CreateEventComponent */],
+            __WEBPACK_IMPORTED_MODULE_23__components_events_event_details_event_details_component__["a" /* EventDetailsComponent */],
+            __WEBPACK_IMPORTED_MODULE_25__components_profile_event_table_event_table_component__["a" /* EventTableComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__components_events_event_details_add_session_add_session_component__["a" /* AddSessionComponent */],
+            __WEBPACK_IMPORTED_MODULE_27__components_events_event_details_session_list_session_list_component__["a" /* SessionListComponent */],
+            __WEBPACK_IMPORTED_MODULE_28__components_collapsible_well_collapsible_well_component__["a" /* CollapsibleWellComponent */],
+            __WEBPACK_IMPORTED_MODULE_29__components_events_attend_attend_component__["a" /* AttendComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
-            __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(__WEBPACK_IMPORTED_MODULE_11__routes__["a" /* appRoutes */]),
-            __WEBPACK_IMPORTED_MODULE_14_angular2_flash_messages__["FlashMessagesModule"]
+            __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__routes__["a" /* appRoutes */]),
+            __WEBPACK_IMPORTED_MODULE_15_angular2_flash_messages__["FlashMessagesModule"]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_13__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_15__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_20__services_events_service__["a" /* EventsService */], __WEBPACK_IMPORTED_MODULE_21__services_resolver__["a" /* EventListResolver */], __WEBPACK_IMPORTED_MODULE_23__services_get_event_resolver_service__["a" /* GetEventResolverService */], __WEBPACK_IMPORTED_MODULE_29__services_attend_service__["a" /* AttendService */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+        providers: [{
+                provide: __WEBPACK_IMPORTED_MODULE_5__angular_common__["LocationStrategy"],
+                useClass: __WEBPACK_IMPORTED_MODULE_5__angular_common__["HashLocationStrategy"]
+            }, __WEBPACK_IMPORTED_MODULE_14__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_16__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_21__services_events_service__["a" /* EventsService */], __WEBPACK_IMPORTED_MODULE_22__services_resolver__["a" /* EventListResolver */], __WEBPACK_IMPORTED_MODULE_24__services_get_event_resolver_service__["a" /* GetEventResolverService */], __WEBPACK_IMPORTED_MODULE_30__services_attend_service__["a" /* AttendService */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -1150,7 +1155,7 @@ var environment = {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt__ = __webpack_require__(177);
@@ -1228,7 +1233,7 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auth_service__ = __webpack_require__(27);
