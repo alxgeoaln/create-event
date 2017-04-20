@@ -916,11 +916,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var NavbarComponent = (function () {
-    function NavbarComponent(authService, router, flashMessage, eventService) {
+    function NavbarComponent(authService, router, flashMessage, eventService, changeDetector) {
         this.authService = authService;
         this.router = router;
         this.flashMessage = flashMessage;
         this.eventService = eventService;
+        this.changeDetector = changeDetector;
         this.searchTerm = "";
     }
     NavbarComponent.prototype.ngOnInit = function () {
@@ -938,7 +939,7 @@ var NavbarComponent = (function () {
         var eventId = session;
         this.eventService.getEvent(eventId).subscribe(function (data) {
             _this.router.navigate(['/dashboard/' + data._id]);
-            location.reload();
+            _this.changeDetector.detectChanges();
         });
     };
     NavbarComponent.prototype.onLogoutClick = function () {
@@ -958,10 +959,10 @@ NavbarComponent = __decorate([
         template: __webpack_require__(360),
         styles: [__webpack_require__(342)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_events_service__["a" /* EventsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_events_service__["a" /* EventsService */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_events_service__["a" /* EventsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_events_service__["a" /* EventsService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"]) === "function" && _e || Object])
 ], NavbarComponent);
 
-var _a, _b, _c, _d;
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=E:/tutoriale/Angular2 - Getting Started/Angular 2 - Brad Traversy/angular-src/src/navbar.component.js.map
 
 /***/ }),
