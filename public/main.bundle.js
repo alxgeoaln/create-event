@@ -938,7 +938,8 @@ var NavbarComponent = (function () {
         var _this = this;
         var eventId = session;
         this.eventService.getEvent(eventId).subscribe(function (data) {
-            _this.router.navigate(['/dashboard/' + data._id]);
+            // this.router.navigate(['/dashboard/' + data._id]);
+            _this.router.navigateByUrl('dashboard/' + data._id);
         });
     };
     NavbarComponent.prototype.onLogoutClick = function () {
@@ -1971,12 +1972,14 @@ var EventDetailsComponent = (function () {
         this.eventService = eventService;
     }
     EventDetailsComponent.prototype.ngOnInit = function () {
+        // this.route.params.forEach((params: Params) => {
+        //   this.event = this.eventService.getEvent(
+        //     +params['event']
+        //   )
+        // });
         var _this = this;
-        this.route.params.forEach(function (params) {
-            _this.event = _this.eventService.getEvent(+params['event']);
-        });
         this.addSession = true;
-        // this.event = this.route.snapshot.data['event'];
+        this.event = this.route.snapshot.data['event'];
         this.authService.getProfile().subscribe(function (profile) {
             _this.user = profile.user._id;
         }, function (err) {
