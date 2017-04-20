@@ -823,9 +823,6 @@ var EventsThumbnailComponent = (function () {
             _this.router.navigate(['/dashboard/' + data._id]);
         });
     };
-    // attendEventClick(event) {
-    //   this.eventService.attendEvents(event).subscribe(data => console.log(data));
-    // }
     EventsThumbnailComponent.prototype.toggleAttend = function (event) {
         if (this.userHasAttended(event)) {
             this.attendService.deleteAttend(event);
@@ -941,6 +938,7 @@ var NavbarComponent = (function () {
         var eventId = session;
         this.eventService.getEvent(eventId).subscribe(function (data) {
             _this.router.navigate(['/dashboard/' + data._id]);
+            location.reload();
         });
     };
     NavbarComponent.prototype.onLogoutClick = function () {
